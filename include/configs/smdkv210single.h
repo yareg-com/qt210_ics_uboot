@@ -69,7 +69,7 @@
 /* skip to load BL2 */
 //#define FAST_BOOT		1
 /*hcj for dbg--mem start from 0x30000000 */
-#define MEMORY_BASE_ADDRESS	0x30000000
+#define MEMORY_BASE_ADDRESS	0x20000000 // yareg: revert to 2
 
 /* input clock of PLL */
 #define CONFIG_SYS_CLK_FREQ	24000000	/* the SMDK6400 has 24MHz input clock */
@@ -604,8 +604,8 @@
 
 /* Just one BSP type should be defined. */
 //#define CFG_FASTBOOT_ONENANDBSP
-//#define CFG_FASTBOOT_NANDBSP
-#define CFG_FASTBOOT_SDMMCBSP
+#define CFG_FASTBOOT_NANDBSP
+//#define CFG_FASTBOOT_SDMMCBSP
 
 /* LCD setting */
 //#define CFG_LCD_TL2796		// for C110 - narrow LCD
